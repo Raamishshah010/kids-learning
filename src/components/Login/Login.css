@@ -1,0 +1,71 @@
+.login{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.571), rgba(255, 255, 255, 0.418)), url('../../../public/images/loginBg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.loginForm{
+    width: 500px;
+    height: 90%;
+    background-color: #2E2F33;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0px 0px 20px #52A0B0;
+}
+.loginForm h5{
+    font-size: 1rem;
+    color: #fafafa;
+    font-weight: 600;
+    margin-block: 2rem;
+}
+
+.loginForm .loginLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm .loginLogo img{
+    width: 120px;
+    padding-top: 70px;
+}
+
+.loginForm .loginInputs{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginForm .loginInputs {
+    width: 100%;
+}
+
+.loginForm .loginInputs input{
+    padding: 1rem 8rem 1rem 1rem ;
+    width: 100%;
+    margin-block: 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.loginForm .btn-login{
+    
+    background-color: #52A0B0;
+    padding: .7rem 9rem;
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 0 1px #52a0b030;
+    font-weight: 500;
+}

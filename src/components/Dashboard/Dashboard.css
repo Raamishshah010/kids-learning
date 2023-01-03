@@ -1,0 +1,372 @@
+.dashboard {
+    display: flex;
+
+
+}
+
+.sidebar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    /* background-color: #fafafa; */
+    height: 100vh;
+    width: 16rem;
+    border-right: 1px solid rgb(243, 243, 243);
+    box-shadow: 0 0px 1rem rgba(248, 248, 248, 0.929);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+
+.sidebar .sidebarLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.sidebar .sidebarLinks {
+    margin-top: 4rem;
+
+}
+
+.sidebar .sidebarLinks .sidebarLink {
+    margin-top: 1rem;
+
+    padding: 1rem;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.sidebar .sidebarLinks .sidebarLink.active {
+    position: relative;
+    margin-top: 1rem;
+    background-color: #52a0b039;
+    padding: 1rem;
+    font-size: .9rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar .sidebarLinks .sidebarLink.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #52A0B0;
+
+}
+
+
+
+
+.sidebar .sidebarLinks .sidebarLink .sidebarLinkText {
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4e4e4e;
+}
+
+.sidebar .sidebarLinks .sidebarLink .sidebarLinkText.active {
+
+    text-decoration: none;
+    color: #52A0B0;
+
+
+}
+
+.sidebar .sidebar-icon {
+    font-size: 1.1rem;
+    margin-right: .7rem;
+}
+
+
+.showMenu .sidebarLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.showMenu .sidebarLinks {
+    margin-top: 4rem;
+
+}
+
+.showMenu .sidebarLinks .sidebarLink {
+    margin-top: 1rem;
+
+    padding: 1rem;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.showMenu .sidebarLinks .sidebarLink.active {
+    position: relative;
+    margin-top: 1rem;
+    background-color: #52a0b039;
+    padding: 1rem;
+    font-size: .9rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.showMenu .sidebarLinks .sidebarLink.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #52A0B0;
+
+}
+
+
+
+
+.showMenu .sidebarLinks .sidebarLink .sidebarLinkText {
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4e4e4e;
+}
+
+.showMenu .sidebarLinks .sidebarLink .sidebarLinkText.active {
+
+    text-decoration: none;
+    color: #52A0B0;
+
+
+}
+
+.showMenu .sidebar-icon {
+    font-size: 1.1rem;
+    margin-right: .7rem;
+}
+
+
+.toggleIcon{
+    font-size: 1rem;
+    background-color: #52A0B0;
+    padding: .3rem .6rem;
+    position: absolute;
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+    right: -1rem;
+    display: none;
+    
+}
+
+
+
+
+/* MAIN */
+.main {
+    flex: 2;
+    margin-left: 16rem;
+    padding: 3rem;
+}
+
+
+.main [type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.main .dropdown-toggle::after {
+    display: none;
+
+}
+
+.dropdown-menu .show {
+    position: absolute;
+    inset: 0px 0px auto auto;
+    transform: translate3d(0px, 44px, 0px);
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 1rem rgb(245, 245, 245);
+    /* padding: 1rem; */
+}
+
+.main .logout_icon {
+    margin-right: 1rem;
+}
+
+.main .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+}
+
+.main .menuIcon {
+    /* display: none; */
+    opacity: 0;
+}
+
+.main .navbar .navbarDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* dashboardMain */
+.main .dashboardMain {
+    margin-top: 2rem;
+}
+
+.main .dashboardMain .topCard {
+    width: 100%;
+    display: flex;
+    align-items: center !important;
+    gap: 3rem;
+    box-shadow: 0 0 1rem 0 rgba(231, 231, 231, 0.378);
+
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+
+.main .dashboardMain .topCard img {
+    width: 4rem;
+
+}
+
+.main .dashboardMain .topCard .topCardContent {
+    color: #4e4e4e;
+    transform: translateY(.7rem);
+}
+
+.main .dashboardMain .topCard .topCardContent h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main .dashboardMain .topCard .topCardContent p {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+
+/* recentMusic */
+
+.recentMusic {
+    margin-top: 4rem;
+}
+
+.recentMusic .recentMusicTable {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba(231, 231, 231, 0.378);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.recentMusic .recentMusicTable .table>:not(caption)>*>* {
+    padding: 1.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    /* border-bottom-width: 1px; */
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.recentMusic .recentMusicTable .dashboardTable{
+    font-size: .8rem;
+}
+
+
+.recentMusic .recentMusicTable .dashboardTable thead th {
+    font-weight: 300;
+}
+
+
+.recentMusic .recentMusicTable .dashboardTable tbody tr {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 947px) {
+    .sidebar{
+        color: red;
+        transform: translateX(-20rem);
+
+    }
+
+    .main{
+        margin: 0 auto;
+    }
+    .menuIcon{
+        opacity: 1 !important;
+        font-size: 1.4rem;
+        background-color: #fff;
+        padding: .3rem .6rem;
+        border-radius: 50%;
+        box-shadow: 0px 0px 1rem 0px rgba(156, 156, 156, 0.2);
+        cursor: pointer;
+    }
+    .showMenu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        /* background-color: #fafafa; */
+        height: 100vh;
+        width: 16rem;
+        background-color: #fff;
+        border-right: 1px solid rgb(243, 243, 243);
+        box-shadow: 0 0px 1rem rgba(248, 248, 248, 0.929);
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    
+.toggleIcon{
+    font-size: 1rem;
+    background-color: #52A0B0;
+    padding: .3rem .6rem;
+    position: absolute;
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+    right: -1rem;
+    display: block;
+    cursor: pointer;
+    
+}
+    
+}

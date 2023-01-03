@@ -1,0 +1,74 @@
+.tab_Links {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+.tab_Links .tab_link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #4a4a4a;
+    transition: .5s all ease;
+}
+
+.tab_Links .tab_link.active {
+
+    color: #fff;
+    background-color: #52A0B0;
+    padding: 6px 50px;
+    border-radius: 12px;
+}
+
+.uploadBtn {
+    position: absolute;
+    top: 20%;
+    right: 40px;
+    margin-bottom: 3rem;
+
+}
+
+.uploadBtn .uploadLink {
+
+    color: #4a4a4a;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.musicCard {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0px 1rem rgba(248, 248, 248, 0.929);
+    border-radius: 12px;
+}
+
+.musicCard .musicCardImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.musicCard .musicCardContent{
+    padding: .7rem;
+}
+
+.musicCard .titleFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.musicCard .titleFlex h5 {
+    font-size: 1rem;
+}
+
+.musicCard .titleFlex .dropDownBtn {
+    color: #4a4a4a;
+    font-size: 2rem;
+    transform: rotate(90deg);
+}
+
+.musicCard p {
+    font-size: .6rem;
+    font-weight: 600;
+}

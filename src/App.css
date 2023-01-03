@@ -1,0 +1,8 @@
+:root{
+    --primary-color : #52A0B0;
+}
+
+.logoutLink{
+    text-decoration: none;
+    color: #4a4a4a;
+}
