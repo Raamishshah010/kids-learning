@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/kids-learning/static/css/main.dfaeeb26.css",
+    "main.js": "/kids-learning/static/js/main.b569f7be.js",
+    "static/media/piano.mp3": "/kids-learning/static/media/piano.98b4d185a67e25a5cb70.mp3",
+    "static/media/loginBg.jpg": "/kids-learning/static/media/loginBg.4a60b2a280906deb7264.jpg",
+    "static/media/musicCardImg.svg": "/kids-learning/static/media/musicCardImg.ed365b528976a13c1867deb7a52afb76.svg",
+    "static/media/userCardImg.svg": "/kids-learning/static/media/userCardImg.2e29c0f2758d23349bd3734ca936c61b.svg",
+    "static/media/stickerCardImg.svg": "/kids-learning/static/media/stickerCardImg.58f1ea441690a30d875b979b72b4043b.svg",
+    "index.html": "/kids-learning/index.html",
+    "main.dfaeeb26.css.map": "/kids-learning/static/css/main.dfaeeb26.css.map",
+    "main.b569f7be.js.map": "/kids-learning/static/js/main.b569f7be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfaeeb26.css",
+    "static/js/main.b569f7be.js"
+  ]
+}
